@@ -12,6 +12,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
 
 ---
 
@@ -120,5 +121,14 @@
 
     
   ```
+## Screenshots
+
+| Column 1 | Column 2 |
+|----------|----------|
+| <img src="https://github.com/user-attachments/assets/42fd7c32-0996-4f5c-8513-69b8a51bae27" alt="Screenshot (126)" width="250" /> | <img src="https://github.com/user-attachments/assets/d7996c79-e5f9-4447-8cbf-f16e261e735a" alt="Screenshot (127)" width="250" /> |
+| <img src="https://github.com/user-attachments/assets/87bb2b4e-1fe1-41c0-b12b-ddeca31f8e1c" alt="Screenshot (128)" width="250" /> | <img src="https://github.com/user-attachments/assets/8b6a36f5-ed1a-4a23-bc51-fa0f15ea795e" alt="Screenshot (130)" width="250" /> |
+</div>
+
+
 
 
