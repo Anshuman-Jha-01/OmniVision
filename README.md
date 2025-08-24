@@ -1,3 +1,5 @@
+<img width="1024" height="1024" alt="OmniVision Space" src="https://github.com/user-attachments/assets/d3a8ea77-7f96-4e32-a608-5c25c18b9b56" />
+
 # OmniVision - AI-Powered Content Filter
 
 **OmniVision** is a browser extension and backend-powered tool designed to filter and analyze online content in real time. Leveraging **Google Generative AI**, it processes data across web pages, detects unsafe or harmful contents like toxicity, NSFW content or self-harm content, and provides comprehensive insights. With a Node.js backend and Manifest V3 Chrome Extension support, OmniVision integrates seamlessly into your browsing experience.
