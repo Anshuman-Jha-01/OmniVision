@@ -38,7 +38,7 @@ document.getElementById("analyzeBtn").addEventListener("click", () => {
 
         const text = results[0].result;
 
-        fetch("http://localhost:3000/analyze", {
+        fetch("https://omnivision-scrw.onrender.com/analyze", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ content: text }),
