@@ -1,0 +1,18 @@
+{
+  "name": "OmniVision",
+  "description": "AI-powered content filter that leverages AI to process data across web pages, detect unsafe or harmful contents like toxicity, NSFW content or self-harm content, and provide comprehensive insights.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "Assets/OmniVision Space.png"
+  },
+  "icons": {
+    "16": "Assets/OmniVision Space.png",
+    "32": "Assets/OmniVision Space.png",
+    "48": "Assets/OmniVision Space.png",
+    "128": "Assets/OmniVision Space.png"
+  }
+}
