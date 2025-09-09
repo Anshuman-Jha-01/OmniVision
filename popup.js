@@ -6,18 +6,18 @@ document.getElementById("analyzeBtn").addEventListener("click", () => {
     chrome.scripting.executeScript({
       target: { tabId },
       func: () => {
-        const overlay = document.createElement('div');
-        overlay.id = 'copilot-extension-overlay';
+        const overlay = document.createElement("div");
+        overlay.id = "copilot-extension-overlay";
         Object.assign(overlay.style, {
-          position: 'fixed',
-          top: '0',
-          left: '0',
-          width: '100vw',
-          height: '100vh',
-          backgroundColor: 'rgba(0, 0, 0, 0.4)',
-          backdropFilter: 'blur(4px)',
-          zIndex: '9999',
-          pointerEvents: 'none',
+          position: "fixed",
+          top: "0",
+          left: "0",
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "rgba(0, 0, 0, 0.4)",
+          backdropFilter: "blur(4px)",
+          zIndex: "9999",
+          pointerEvents: "none",
         });
         document.body.appendChild(overlay);
       },
@@ -34,7 +34,15 @@ document.getElementById("analyzeBtn").addEventListener("click", () => {
         const recommendation = document.getElementById("recommendationBox");
         container.innerText = "";
         recommendation.style.textAlign = "center";
-        recommendation.innerHTML = `<i class="fa-solid fa-spinner fa-spin-pulse fa-xl"></i>`;
+        recommendation.innerHTML = `<div class="pyramid-loader">
+                                      <div class="wrapper">
+                                        <span class="side side1"></span>
+                                        <span class="side side2"></span>
+                                        <span class="side side3"></span>
+                                        <span class="side side4"></span>
+                                        <span class="shadow"></span>
+                                      </div>  
+                                    </div>`;
 
         const text = results[0].result;
 
@@ -90,7 +98,9 @@ document.getElementById("analyzeBtn").addEventListener("click", () => {
             chrome.scripting.executeScript({
               target: { tabId },
               func: () => {
-                const overlay = document.getElementById('copilot-extension-overlay');
+                const overlay = document.getElementById(
+                  "copilot-extension-overlay"
+                );
                 if (overlay) overlay.remove();
               },
             });
